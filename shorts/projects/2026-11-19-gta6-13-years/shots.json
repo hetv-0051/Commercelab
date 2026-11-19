@@ -1,0 +1,13 @@
+{"style": "flat", "shots": [
+  {"from_word": 0,  "kind": "emoji", "emoji": "🎮", "label": "Out today", "size": 380},
+  {"from_word": 5,  "kind": "question", "text": "13 years?"},
+  {"from_word": 12, "kind": "timeline", "title": "GTA 5", "points": [{"year": 2013, "label": "GTA 5 launches"}, {"year": 2026, "label": "GTA 6"}]},
+  {"from_word": 22, "kind": "number", "value": 230, "prefix": "", "suffix": "M+", "label": "copies of GTA 5 sold", "emoji": "💿"},
+  {"from_word": 29, "kind": "slots", "items": ["💵", "💵", "💵", "💵", "💰"], "label": "Still printing money"},
+  {"from_word": 41, "kind": "emoji", "emoji": "📺", "label": "Trailer 1, Dec 2023", "size": 380},
+  {"from_word": 50, "kind": "number", "value": 90, "suffix": "M", "label": "views in 24 hours", "emoji": "🏆"},
+  {"from_word": 59, "kind": "board", "tag": "RELEASE DATE", "cards": [{"emoji": "🍂", "x": true, "x_after": 0.9}, {"emoji": "🌷", "x": true, "x_after": 0.9}, {"emoji": "🎮"}]},
+  {"from_word": 74, "kind": "rating", "count": 6, "filled": 2, "to": 6, "hot": true, "label": "HYPE LEVEL"},
+  {"from_word": 85, "kind": "map", "hero": "🚗", "followers": ["🚙", "🚕", "🚗"], "label": "Everyone's waiting", "speed": 320},
+  {"from_word": 94, "kind": "question", "text": "13 years?"}
+]}

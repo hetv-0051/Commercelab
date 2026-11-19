@@ -396,7 +396,7 @@ def draw_shot(canvas, shot, lt, dur, st, hl):
 
     elif k == "timeline":
         pts = shot["points"][:4]
-        x0, x1 = SAFE_L + 60, SAFE_R - 60
+        x0, x1 = SAFE_L + 150, SAFE_R - 150
         y = cy + 60
         pl = ease_out(lt / 0.9)
         d.line([(x0, y), (lerp(x0, x1, pl), y)], fill=txt, width=10)
@@ -409,10 +409,10 @@ def draw_shot(canvas, shot, lt, dur, st, hl):
             col = acc if i == len(pts) - 1 else st["accent2"]
             d.ellipse([x - r, y - r, x + r, y + r], fill=col, outline=(0, 0, 0), width=4)
             up = i % 2 == 0
-            d.text((x, y + (-70 if up else 80)), str(ptn["year"]), font=font("black", 62),
+            d.text((x, y + (-80 if up else 90)), str(ptn["year"]), font=font("black", 84),
                    fill=col, anchor="mm", stroke_width=5, stroke_fill=(0, 0, 0))
-            f, lines, lh = fit_text(ptn["label"], "bold", 250, 130, start=44, min_size=30)
-            draw_lines(d, lines, f, lh, x, y + (-170 if up else 180), txt, sw=4)
+            f, lines, lh = fit_text(ptn["label"], "bold", 300, 150, start=60, min_size=36)
+            draw_lines(d, lines, f, lh, x, y + (-200 if up else 210), txt, sw=4)
         if shot.get("title"):
             f, lines, lh = fit_text(shot["title"], fnt_name, SAFE_R - SAFE_L, 200, start=84)
             draw_lines(d, lines, f, lh, cx, VIS_TOP + 80, txt, sw=6, hl=hl, hl_fill=acc)
@@ -587,14 +587,23 @@ def draw_shot(canvas, shot, lt, dur, st, hl):
         canvas.alpha_composite(dim)
         hy = cy + 120
         hero = shot.get("hero", "🚗")
+        rot = float(shot.get("rotate", -90))  # car emoji face left; -90 turns them to face up
+        glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        gd = ImageDraw.Draw(glow)
+        spots = [(cx + 25 * math.sin(lt * 1.5), hy)]
         for i, fol in enumerate(shot.get("followers", [])):
-            wob = 40 * math.sin(lt * 2 + i)
-            fy = hy + 220 + i * 180
-            fx = cx + wob + (i % 2) * 60 - 30
-            ImageDraw.Draw(canvas).ellipse([fx - 80, fy - 160, fx + 80, fy], fill=(255, 250, 200, 25))
-            paste_emoji(fol, 120, fx, fy)
-        ImageDraw.Draw(canvas).ellipse([cx - 90, hy - 230, cx + 90, hy - 40], fill=(255, 250, 210, 35))
-        paste_emoji(hero, 150, cx + 25 * math.sin(lt * 1.5), hy, pin)
+            spots.append((cx + 40 * math.sin(lt * 2 + i) + (i % 2) * 60 - 30, hy + 220 + i * 170))
+        for x, y in spots:
+            gd.polygon([(x - 30, y - 50), (x + 30, y - 50), (x + 110, y - 330), (x - 110, y - 330)],
+                       fill=(255, 245, 200, 40))
+        canvas.alpha_composite(glow.filter(ImageFilter.GaussianBlur(14)))
+        for i, fol in enumerate(shot.get("followers", [])):
+            x, y = spots[i + 1]
+            im = emoji_img(fol, 120).rotate(rot, expand=True, resample=Image.BICUBIC)
+            canvas.alpha_composite(im, (int(x - im.width / 2), int(y - im.height / 2)))
+        x, y = spots[0]
+        im = emoji_img(hero, 150 * max(0.1, pin)).rotate(rot, expand=True, resample=Image.BICUBIC)
+        canvas.alpha_composite(im, (int(x - im.width / 2), int(y - im.height / 2)))
         if shot.get("label"):
             f, lines, lh = fit_text(shot["label"], "black", SAFE_R - SAFE_L, 150, start=76)
             draw_lines(ImageDraw.Draw(canvas), lines, f, lh, cx, VIS_TOP + 60, txt, sw=6)
