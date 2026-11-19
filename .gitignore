@@ -1,0 +1,6 @@
+shorts/projects/*/out/
+shorts/projects/*/*.mp3
+shorts/projects/*/*.wav
+shorts/projects/*/frames/
+__pycache__/
+*.mp4

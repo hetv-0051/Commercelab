@@ -1,0 +1,15 @@
+{"style": "flat", "shots": [
+  {"from_word": 0,  "kind": "question", "text": "Stop eating?"},
+  {"from_word": 7,  "kind": "emoji", "emoji": "🍽️", "label": "For a whole week", "size": 380},
+  {"from_word": 13, "kind": "board", "tag": "THE STUDY", "cards": [{"emoji": "🧑"}, {"emoji": "👩"}, {"emoji": "🧔"}]},
+  {"from_word": 18, "kind": "rating", "count": 7, "filled": 0, "to": 7, "label": "WATER ONLY"},
+  {"from_word": 24, "kind": "emoji", "emoji": "🍬", "label": "Day 1: sugar", "size": 380},
+  {"from_word": 32, "kind": "vs", "title": "Day 2–3", "left": {"emoji": "🍬", "text": "Sugar"}, "right": {"emoji": "🧈", "text": "Stored fat"}},
+  {"from_word": 44, "kind": "question", "mark": "!", "text": "The strange part"},
+  {"from_word": 49, "kind": "number", "value": 3000, "label": "blood proteins measured", "emoji": "🩸"},
+  {"from_word": 60, "kind": "rating", "count": 3, "filled": 0, "to": 1, "hot": true, "label": "1 in 3 changed"},
+  {"from_word": 67, "kind": "slots", "items": ["🫀", "🫁", "🦴", "🩸", "🧠"], "label": "Every major organ"},
+  {"from_word": 77, "kind": "number", "value": 5.7, "decimals": 1, "suffix": " kg", "label": "lost on average", "emoji": "⚖️"},
+  {"from_word": 87, "kind": "emoji", "emoji": "🩺", "label": "Doctor first", "size": 380},
+  {"from_word": 94, "kind": "question", "text": "7 days. No food."}
+]}
