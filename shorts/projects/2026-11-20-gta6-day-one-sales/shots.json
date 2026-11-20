@@ -1,0 +1,96 @@
+{
+ "style": "flat",
+ "shots": [
+  {
+   "from_word": 0,
+   "kind": "question",
+   "text": "One day?"
+  },
+  {
+   "from_word": 11,
+   "kind": "number",
+   "value": 800,
+   "prefix": "$",
+   "suffix": "M",
+   "label": "GTA 5 day one, 2013",
+   "emoji": "💵"
+  },
+  {
+   "from_word": 20,
+   "kind": "number",
+   "value": 1,
+   "prefix": "$",
+   "suffix": "B",
+   "label": "GTA 5 in 3 days",
+   "emoji": "🏆"
+  },
+  {
+   "from_word": 33,
+   "kind": "emoji",
+   "emoji": "🚀",
+   "label": "GTA 6 blew past it",
+   "size": 380
+  },
+  {
+   "from_word": 39,
+   "kind": "number",
+   "value": 3.79,
+   "decimals": 2,
+   "prefix": "$",
+   "suffix": "B",
+   "label": "GTA 6 day one",
+   "emoji": "🎮"
+  },
+  {
+   "from_word": 48,
+   "kind": "number",
+   "value": 4.7,
+   "decimals": 1,
+   "suffix": "x",
+   "label": "GTA 5's opening day",
+   "emoji": "📈"
+  },
+  {
+   "from_word": 55,
+   "kind": "question",
+   "text": "The catch?"
+  },
+  {
+   "from_word": 59,
+   "kind": "number",
+   "value": 32.5,
+   "decimals": 1,
+   "suffix": "M",
+   "label": "copies sold before launch",
+   "emoji": "📦"
+  },
+  {
+   "from_word": 70,
+   "kind": "vs",
+   "title": "Two different totals",
+   "left": {
+    "emoji": "🎮",
+    "text": "Rockstar"
+   },
+   "right": {
+    "emoji": "📊",
+    "text": "Analysts"
+   }
+  },
+  {
+   "from_word": 82,
+   "kind": "number",
+   "value": 2.36,
+   "decimals": 2,
+   "prefix": "$",
+   "suffix": "B",
+   "label": "Sensor Tower estimate",
+   "emoji": "📊"
+  },
+  {
+   "from_word": 84,
+   "kind": "question",
+   "text": "One day?"
+  }
+ ]
+}
