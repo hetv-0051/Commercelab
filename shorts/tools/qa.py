@@ -83,6 +83,9 @@ def check(proj):
     if len(t) > 60 or not t.endswith("#shorts"):
         errs.append(f"title must be <=60 chars and end with #shorts: {t!r}")
     rep = json.load(open(os.path.join(out, "render_report.json")))
+    up = os.path.join(out, "upload.mp4")
+    if not os.path.exists(up) or os.path.getsize(up) > 3_000_000:
+        errs.append("upload.mp4 missing or over 3 MB")
     res = {"duration": round(dur, 2), "lufs": lufs, "errors": errs, "render_warnings": rep["warnings"]}
     print(json.dumps(res, indent=1))
     sys.exit(1 if errs else 0)

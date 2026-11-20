@@ -1,0 +1,13 @@
+{"style": "flat", "shots": [
+  {"from_word": 0,  "kind": "question", "text": "Partner > guns?"},
+  {"from_word": 12, "kind": "vs", "title": "The duo", "left": {"emoji": "🧔", "text": "Jason"}, "right": {"emoji": "👩", "text": "Lucia"}},
+  {"from_word": 22, "kind": "emoji", "emoji": "🔄", "label": "Switch any time", "size": 380},
+  {"from_word": 34, "kind": "slots", "items": ["📱", "💬", "📞"], "label": "Calls and texts"},
+  {"from_word": 43, "kind": "emoji", "emoji": "🍹", "label": "Date night", "size": 380},
+  {"from_word": 52, "kind": "vs", "title": "Fighting style", "left": {"emoji": "💪", "text": "Raw power"}, "right": {"emoji": "⚡", "text": "Speed and skill"}},
+  {"from_word": 67, "kind": "question", "mark": "!", "text": "The twist"},
+  {"from_word": 71, "kind": "board", "tag": "SPLIT UP", "cards": [{"emoji": "🧔"}, {"emoji": "👩"}]},
+  {"from_word": 80, "kind": "rating", "count": 6, "filled": 4, "to": 2, "hot": true, "label": "WANTED LEVEL DOWN"},
+  {"from_word": 85, "kind": "map", "hero": "🚗", "followers": ["🚙", "🚕"], "label": "Your best weapon?", "speed": 320},
+  {"from_word": 95, "kind": "question", "text": "Partner > guns?"}
+]}

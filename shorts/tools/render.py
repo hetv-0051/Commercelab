@@ -813,8 +813,24 @@ def main():
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *inputs, "-filter_complex", ";".join(filt),
                     "-map", "0:v", "-map", "[aout]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
                     "-ar", "48000", "-t", str(total), "-movflags", "+faststart", final], check=True)
+    # Upload copy under 3 MB: the Drive connector caps each call at ~3.1 MB of file.
+    up = os.path.join(out_dir, "upload.mp4")
+    vk = max(300, int((2.85e6 * 8 / total - 96000) / 1000))
+    for ps in (1, 2):
+        cmd = ["ffmpeg", "-y", "-loglevel", "error", "-i", final, "-c:v", "libx264", "-preset", "slow",
+               "-b:v", f"{vk}k", "-pass", str(ps), "-passlogfile", os.path.join(out_dir, "x264")]
+        cmd += (["-an", "-f", "mp4", os.devnull] if ps == 1 else
+                ["-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart", up])
+        subprocess.run(cmd, check=True)
+    for f in os.listdir(out_dir):
+        if f.startswith("x264"):
+            os.remove(os.path.join(out_dir, f))
+    report["upload_bytes"] = os.path.getsize(up)
+    if report["upload_bytes"] > 3_000_000:
+        report["warnings"].append(f"upload.mp4 is {report['upload_bytes']} bytes (>3 MB)")
+    json.dump(report, open(os.path.join(out_dir, "render_report.json"), "w"), indent=1)
     print(json.dumps(report, indent=1))
-    print("final:", final)
+    print("final:", final, "upload:", up)
 
 
 if __name__ == "__main__":
