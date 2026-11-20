@@ -1,0 +1,13 @@
+{"style": "flat", "shots": [
+  {"from_word": 0,  "kind": "question", "text": "28 years?"},
+  {"from_word": 9,  "kind": "number", "value": 99, "suffix": "/100", "label": "GTA 6 on Metacritic", "emoji": "⭐"},
+  {"from_word": 21, "kind": "bars", "title": "Rockstar scores", "items": [{"label": "GTA 4", "value": 98, "text": "98"}, {"label": "GTA 5", "value": 97, "text": "97"}, {"label": "RDR 2", "value": 97, "text": "97"}, {"label": "GTA 6", "value": 99, "text": "99"}]},
+  {"from_word": 38, "kind": "emoji", "emoji": "🏆", "label": "The 99 club", "size": 380},
+  {"from_word": 46, "kind": "vs", "title": "Both scored 99", "left": {"emoji": "🗡️", "text": "Ocarina, 1998"}, "right": {"emoji": "🎮", "text": "GTA 6, 2026"}},
+  {"from_word": 52, "kind": "question", "text": "A tie?"},
+  {"from_word": 59, "kind": "number", "value": 22, "label": "critics for Ocarina", "emoji": "🗡️"},
+  {"from_word": 67, "kind": "number", "value": 140, "suffix": "+", "label": "critics for GTA 6", "emoji": "🎮"},
+  {"from_word": 75, "kind": "slots", "items": ["✅", "✅", "✅", "✅", "✅"], "label": "Zero negative reviews"},
+  {"from_word": 81, "kind": "bars", "title": "Number of critics", "items": [{"label": "Ocarina", "value": 22, "text": "22"}, {"label": "GTA 6", "value": 140, "text": "140+"}]},
+  {"from_word": 91, "kind": "question", "text": "28 years?"}
+]}
