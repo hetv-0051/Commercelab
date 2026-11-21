@@ -1,0 +1,90 @@
+{
+ "style": "flat",
+ "shots": [
+  {
+   "from_word": 0,
+   "kind": "question",
+   "text": "Longest ladder?"
+  },
+  {
+   "from_word": 9,
+   "kind": "emoji",
+   "emoji": "🗼",
+   "label": "Giant radio tower"
+  },
+  {
+   "from_word": 16,
+   "kind": "number",
+   "value": 7,
+   "prefix": "~",
+   "suffix": " min",
+   "label": "to climb it",
+   "emoji": "🪜"
+  },
+  {
+   "from_word": 22,
+   "kind": "number",
+   "value": 3,
+   "suffix": "x+",
+   "label": "Metal Gear Solid 3's ladder",
+   "emoji": "🎮"
+  },
+  {
+   "from_word": 30,
+   "kind": "emoji",
+   "emoji": "🪺",
+   "label": "A nest of eggs"
+  },
+  {
+   "from_word": 42,
+   "kind": "headline",
+   "text": "Secret cutscene",
+   "emoji": "🎬"
+  },
+  {
+   "from_word": 52,
+   "kind": "board",
+   "tag": "SPLAT",
+   "cards": [
+    {
+     "emoji": "🏈"
+    },
+    {
+     "emoji": "🚗"
+    },
+    {
+     "emoji": "📱"
+    }
+   ]
+  },
+  {
+   "from_word": 65,
+   "kind": "question",
+   "text": "The real joke?"
+  },
+  {
+   "from_word": 70,
+   "kind": "emoji",
+   "emoji": "🍫",
+   "label": "Vice City, 2002"
+  },
+  {
+   "from_word": 82,
+   "kind": "vs",
+   "title": "24 years later",
+   "left": {
+    "emoji": "🍫",
+    "text": "2002"
+   },
+   "right": {
+    "emoji": "🥚",
+    "text": "2026"
+   }
+  },
+  {
+   "from_word": 93,
+   "kind": "question",
+   "text": "Longest ladder?"
+  }
+ ]
+}
