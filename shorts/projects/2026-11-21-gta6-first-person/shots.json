@@ -1,0 +1,80 @@
+{
+ "style": "flat",
+ "shots": [
+  {
+   "from_word": 0,
+   "kind": "question",
+   "text": "First person?"
+  },
+  {
+   "from_word": 9,
+   "kind": "headline",
+   "text": "Officially, no",
+   "emoji": "🚫"
+  },
+  {
+   "from_word": 15,
+   "kind": "emoji",
+   "emoji": "🎬",
+   "label": "Built for third person"
+  },
+  {
+   "from_word": 24,
+   "kind": "emoji",
+   "emoji": "🚪",
+   "label": "A back door"
+  },
+  {
+   "from_word": 34,
+   "kind": "slots",
+   "items": [
+    "🚗",
+    "📱",
+    "🎥"
+   ],
+   "label": "Car, phone, camera"
+  },
+  {
+   "from_word": 49,
+   "kind": "emoji",
+   "emoji": "👀",
+   "label": "Locked in first person"
+  },
+  {
+   "from_word": 58,
+   "kind": "headline",
+   "text": "Reload to escape",
+   "emoji": "💾"
+  },
+  {
+   "from_word": 69,
+   "kind": "question",
+   "text": "The twist?"
+  },
+  {
+   "from_word": 73,
+   "kind": "headline",
+   "text": "GTA 5 did too",
+   "emoji": "🎮"
+  },
+  {
+   "from_word": 80,
+   "kind": "timeline",
+   "points": [
+    {
+     "year": 2013,
+     "label": "GTA 5 launch"
+    },
+    {
+     "year": 2014,
+     "label": "First person added"
+    }
+   ]
+  },
+  {
+   "from_word": 94,
+   "kind": "question",
+   "text": "First person?"
+  }
+ ]
+}
