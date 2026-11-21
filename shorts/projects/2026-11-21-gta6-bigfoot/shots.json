@@ -1,0 +1,103 @@
+{
+ "style": "flat",
+ "shots": [
+  {
+   "from_word": 0,
+   "kind": "question",
+   "text": "Bigfoot real?"
+  },
+  {
+   "from_word": 7,
+   "kind": "board",
+   "tag": "SPOTTED",
+   "cards": [
+    {
+     "emoji": "🦍"
+    },
+    {
+     "emoji": "🦌"
+    }
+   ]
+  },
+  {
+   "from_word": 21,
+   "kind": "emoji",
+   "emoji": "🦍",
+   "label": "Mister Mangrove"
+  },
+  {
+   "from_word": 32,
+   "kind": "board",
+   "tag": "HUNTER",
+   "cards": [
+    {
+     "emoji": "🧔"
+    },
+    {
+     "emoji": "🔦"
+    }
+   ]
+  },
+  {
+   "from_word": 41,
+   "kind": "vs",
+   "title": "Who do you shoot?",
+   "left": {
+    "emoji": "🦍",
+    "text": "The beast"
+   },
+   "right": {
+    "emoji": "🧔",
+    "text": "Kirk"
+   }
+  },
+  {
+   "from_word": 54,
+   "kind": "question",
+   "text": "The real twist?"
+  },
+  {
+   "from_word": 59,
+   "kind": "board",
+   "tag": "2004",
+   "cards": [
+    {
+     "emoji": "🌲"
+    },
+    {
+     "emoji": "🦍",
+     "x": true
+    }
+   ]
+  },
+  {
+   "from_word": 75,
+   "kind": "emoji",
+   "emoji": "🎭",
+   "label": "Just a costume"
+  },
+  {
+   "from_word": 86,
+   "kind": "timeline",
+   "points": [
+    {
+     "year": 2004,
+     "label": "San Andreas"
+    },
+    {
+     "year": 2013,
+     "label": "GTA 5"
+    },
+    {
+     "year": 2026,
+     "label": "GTA 6"
+    }
+   ]
+  },
+  {
+   "from_word": 95,
+   "kind": "question",
+   "text": "Bigfoot real?"
+  }
+ ]
+}
