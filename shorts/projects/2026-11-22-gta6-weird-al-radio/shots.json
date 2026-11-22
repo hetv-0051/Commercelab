@@ -1,0 +1,79 @@
+{
+ "style": "flat",
+ "shots": [
+  {
+   "from_word": 0,
+   "kind": "question",
+   "text": "Who's the DJ?"
+  },
+  {
+   "from_word": 10,
+   "kind": "emoji",
+   "emoji": "📻",
+   "label": "Vice City FM"
+  },
+  {
+   "from_word": 24,
+   "kind": "emoji",
+   "emoji": "✅",
+   "label": "Rockstar confirmed it"
+  },
+  {
+   "from_word": 29,
+   "kind": "emoji",
+   "emoji": "🪗",
+   "label": "Weird Al Yankovic"
+  },
+  {
+   "from_word": 33,
+   "kind": "slots",
+   "items": [
+    "🎙️",
+    "📺",
+    "🍔"
+   ],
+   "label": "Host, ads, Burger Shot"
+  },
+  {
+   "from_word": 46,
+   "kind": "question",
+   "text": "The twist?"
+  },
+  {
+   "from_word": 50,
+   "kind": "emoji",
+   "emoji": "🎓",
+   "label": "College radio DJ"
+  },
+  {
+   "from_word": 64,
+   "kind": "emoji",
+   "emoji": "🚽",
+   "label": "Recorded in a bathroom"
+  },
+  {
+   "from_word": 77,
+   "kind": "vs",
+   "title": "On the playlist",
+   "left": {
+    "emoji": "📻",
+    "text": "80s hits"
+   },
+   "right": {
+    "emoji": "🪗",
+    "text": "His songs? Missing"
+   }
+  },
+  {
+   "from_word": 91,
+   "kind": "emoji",
+   "emoji": "🔊",
+   "label": "Listen closely"
+  },
+  {
+   "from_word": 101,
+   "kind": "question",
+   "text": "Who's the DJ?"
+  }
+ ]
+}
