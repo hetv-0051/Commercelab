@@ -1,0 +1,13 @@
+{"style": "flat", "shots": [
+  {"from_word": 0, "kind": "question", "text": "A GTA 5 mountain?"},
+  {"from_word": 13, "kind": "board", "tag": "MEETUP", "cards": [{"emoji": "🧔"}, {"emoji": "🧑"}, {"emoji": "🍺"}]},
+  {"from_word": 31, "kind": "emoji", "emoji": "👂", "label": "Overheard gossip"},
+  {"from_word": 38, "kind": "slots", "items": ["🔒", "🚀", "🥚"], "label": "The bunker rumor"},
+  {"from_word": 48, "kind": "emoji", "emoji": "⛰️", "label": "Mount Chiliad"},
+  {"from_word": 58, "kind": "slots", "items": ["🛸", "🥚", "🚀"], "label": "The mural"},
+  {"from_word": 66, "kind": "timeline", "points": [{"year": 2013, "label": "Mural"}, {"year": 2017, "label": "Jetpack"}]},
+  {"from_word": 78, "kind": "question", "text": "The twist?"},
+  {"from_word": 82, "kind": "emoji", "emoji": "🃏", "label": "Just a prank"},
+  {"from_word": 98, "kind": "number", "value": 13, "suffix": " years", "label": "still trolling"},
+  {"from_word": 107, "kind": "question", "text": "A GTA 5 mountain?"}
+]}
