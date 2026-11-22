@@ -1,0 +1,102 @@
+{
+ "style": "flat",
+ "shots": [
+  {
+   "from_word": 0,
+   "kind": "question",
+   "text": "Hidden early?"
+  },
+  {
+   "from_word": 10,
+   "kind": "emoji",
+   "emoji": "🖼️",
+   "label": "Mystery photo, 2021"
+  },
+  {
+   "from_word": 21,
+   "kind": "board",
+   "tag": "PHOTO",
+   "cards": [
+    {
+     "emoji": "🏠"
+    },
+    {
+     "emoji": "🌴"
+    },
+    {
+     "emoji": "🛸"
+    }
+   ]
+  },
+  {
+   "from_word": 30,
+   "kind": "vs",
+   "title": "Where's it from?",
+   "left": {
+    "emoji": "🎮",
+    "text": "Old games"
+   },
+   "right": {
+    "emoji": "❓",
+    "text": "No match"
+   }
+  },
+  {
+   "from_word": 43,
+   "kind": "emoji",
+   "emoji": "🗺️",
+   "label": "Mapped in Belville"
+  },
+  {
+   "from_word": 52,
+   "kind": "emoji",
+   "emoji": "🏠",
+   "label": "The exact house"
+  },
+  {
+   "from_word": 57,
+   "kind": "question",
+   "text": "The garage?"
+  },
+  {
+   "from_word": 65,
+   "kind": "emoji",
+   "emoji": "🕵️",
+   "label": "Trapped in a game"
+  },
+  {
+   "from_word": 77,
+   "kind": "slots",
+   "items": [
+    "👥",
+    "🔒",
+    "🏢"
+   ],
+   "label": "His notes"
+  },
+  {
+   "from_word": 85,
+   "kind": "board",
+   "tag": "J AND L",
+   "cards": [
+    {
+     "emoji": "🧔"
+    },
+    {
+     "emoji": "👩"
+    }
+   ]
+  },
+  {
+   "from_word": 95,
+   "kind": "emoji",
+   "emoji": "🖼️",
+   "label": "Just decoration?"
+  },
+  {
+   "from_word": 102,
+   "kind": "question",
+   "text": "Hidden early?"
+  }
+ ]
+}
